@@ -8,6 +8,62 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 class="text-center">Welcome to Bank of PayFh</h1>
+    <div id="login-area">
+        <div class="logo-container text-center">
+            <a href="#"><img class="img-fluid logo " src="images/logo.png" alt="bank logo">
+            </a>
+        </div>
+        <h1 class="text-center mb-5">Welcome to Bank of PayFh</h1>
+        <div class="submit-area w-75 m-auto">
+            <input class="form-control" type="text" placeholder="Enter your email">
+            <input class="form-control" type="password" placeholder="Enter your password">
+            <input id="login-btn" class="btn btn-success" type="button" value="Log In">
+        </div>
+    </div>
+
+    <div id="transaction" class="container">
+        <div class="row text-white">
+            <div class="col-md-4 mt-3">
+                <div class="status deposite">
+                    <h4>Deposite</h4>
+                    <h5>$ <span id="current-depo">00</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="status withdraw">
+                    <h4>Withdraw</h4>
+                    <h5>$00</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="status balance">
+                    <h4>Balance</h4>
+                    <h5>$12000</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="input-container">
+                    <h3>Deposite</h3>
+                    <input id="deposite-amount" class="form-control" type="text" placeholder="Amount to Deposite">
+                    <input id="deposite-btn" class="btn btn-success"  type="button" value="Deposite">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="input-container">
+                    <h3>Withdraw</h3>
+                    <input id="withdraw-amount" class="form-control"  type="text" placeholder="Amount to withdraw">
+                    <input id="withdraw-btn" class="btn btn-success"  type="button" value="Withdraw" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
